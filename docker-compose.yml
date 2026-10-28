@@ -1,0 +1,18 @@
+# Séance — local development stack (Docker Compose)
+# Spins up MongoDB (for Atlas-style vector memory) locally so the séance
+# can store séance history on your machine. No cloud required.
+
+services:
+  mongodb:
+    image: mongodb/mongodb-community-server:7.0-ubuntu2204
+    container_name: seance-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - seance_mongo_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: seance
+
+volumes:
+  seance_mongo_data:

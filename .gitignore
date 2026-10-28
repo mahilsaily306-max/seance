@@ -1,0 +1,12 @@
+# Séance — Ghost in the Machine
+node_modules/
+.env
+.env.local
+*.log
+npm-debug.log*
+.pnpm-debug.log*
+.DS_Store
+.cache/
+coverage/
+*.seed
+séance-logs/*.jsonl

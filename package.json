@@ -1,0 +1,59 @@
+{
+  "name": "seance",
+  "version": "1.0.0",
+  "description": "Ghost in the Machine — an offline séance chatbot that channels the spirits of dead programming languages using open-source AI at its core. Built for Hacktoberfest 2026 Challenge Week 4.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/seance.js",
+    "dev": "node --watch src/seance.js",
+    "test": "node --test",
+    "lint": "echo 'lint: run `npm test` to exercise the séance modules'",
+    "setup": "node scripts/setup.js"
+  },
+  "keywords": [
+    "hacktoberfest",
+    "hf26challenge",
+    "ghost-in-the-machine",
+    "open-source-ai",
+    "local-llm",
+    "seance",
+    "dead-programming-languages",
+    "gemma",
+    "mastra",
+    "mongodb",
+    "sentry",
+    "serpapi",
+    "elevenlabs",
+    "temporal",
+    "tinker",
+    "auth0",
+    "backboard",
+    "browserbase",
+    "tabpfn",
+    "tiger-data",
+    "render",
+    "digitalocean"
+  ],
+  "devDependencies": {
+    "@sentry/node": "^8.30.0",
+    "mongodb": "^6.8.0",
+    "pg": "^8.13.0",
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.8",
+    "octokit": "^3.1.0"
+  },
+  "optionalDependencies": {
+    "@huggingface/inference": "^2.8.0",
+    "elevenlabs": "^0.8.0",
+    "@temporalio/workflow": "^1.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mahilsaily306-max/seance.git"
+  },
+  "license": "MIT"
+}
